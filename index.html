@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Demo</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        #dynamic-box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            margin-top: 10px;
+        }
+
+        #messages p {
+            padding: 5px;
+            background-color: #f1f1f1;
+            margin: 5px 0;
+        }
+    </style>
+  <script src= 'app.js' defer>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1 id="main-title">Welcome to the DOM Demo</h1>
+    </header>
+
+    <!-- Section -->
+    <section>
+        <p id="info-text">Click the buttons below to see dynamic changes!</p>
+        <button onclick="changeText()">Change Heading Text</button>
+        <button onclick="changeStyle()">Change Box Style</button>
+        <button onclick="addMessage()">Add Message</button>
+        <button onclick="removeMessages()">Clear Messages</button>
+    </section>
+
+    <!-- Dynamic Element -->
+    <div id="dynamic-box"></div>
+
+    <!-- Message Container -->
+    <section id="messages">
+        <!-- Messages will appear here -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 DOM Demo</p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
